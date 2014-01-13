@@ -17,7 +17,7 @@ proc= subprocess.Popen([date], stdout=subprocess.PIPE, stderr=subprocess.PIPE, s
 save = save.strip()
 ccmd = 'git commit -a --allow-empty-message -m \'' + save + '\''
 #push to git
-cmd = 'git push'
+cmd = 'git push -u origin master'
 
 
 ##FUNCTION: Runs shell commads
