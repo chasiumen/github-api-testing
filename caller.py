@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import wrapper
+import githubapi
 import subprocess
 
 ##VARIABLES
@@ -19,6 +19,6 @@ user = uin + '/'
 url = base_url+user+'repos'
 
 #print url
-a = wrapper.git_api('test')
+a = githubapi.git_api('test')
 a.RepoNames(url)
 a.totalNumberOfRepos(url)
